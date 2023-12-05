@@ -1,1 +1,9 @@
 pnpm add @nestjs/typeorm typeorm pg
+
+nest g mo database /modules --flat
+
+nest g s users
+
+nest g co users
+
+nest g mo users
