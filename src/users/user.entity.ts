@@ -2,13 +2,7 @@
 import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, ManyToMany, JoinTable } from 'typeorm';
 import { DEFALT_PROFILE_URI } from '../utils/common';
 import { Role } from 'src/entities/role.entity';
-
-enum AccountStatus {
-  ACTIVE = 'ACTIVE',
-  PENDING = 'PENDING',
-  SUSPENDED = 'SUSPENDED',
-  DELETED = 'DELETED',
-}
+import { AccountStatus } from '../enums/Options';
 
 @Entity({ name: 'users' })
 export class User {
